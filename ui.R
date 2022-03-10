@@ -2,6 +2,9 @@ ui <- fluidPage(
 selectInput(inputId = 'selected_stock',
               label = 'select stock',
               choices = unique(stocks$symbol)),
+selectInput(inputId = 'selected_metric',
+            label = 'select metric',
+            choices = c("open", "close", "low", "high")),
 dateRangeInput(
   inputId = 'selected_date_range',
   label = "Select date range",
