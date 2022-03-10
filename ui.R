@@ -14,6 +14,7 @@ dateRangeInput(
   start = min(stocks$date),
   end = max(stocks$date),
 ),
+submitButton(text = "Submit Search"),
 
 plotOutput('ts_plot'),
 plotOutput('ts_plot2')
